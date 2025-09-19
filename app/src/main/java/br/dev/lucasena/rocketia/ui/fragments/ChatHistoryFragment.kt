@@ -158,7 +158,7 @@ class ChatHistoryFragment : Fragment() {
 
                 chip.id = View.generateViewId()
                 chip.text = tech.name
-                chip.chipIcon = ContextCompat.getDrawable(context, tech.image)
+                chip.chipIcon = ContextCompat.getDrawable(context!!, tech.image)
 
                 clFlow.addView(chip)
                 chipIds.add(chip.id)

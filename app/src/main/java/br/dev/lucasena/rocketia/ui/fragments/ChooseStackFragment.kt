@@ -128,7 +128,7 @@ class ChooseStackFragment : Fragment() {
 
                 chip.id = View.generateViewId()
                 chip.text = tech.name
-                chip.chipIcon = ContextCompat.getDrawable(context, tech.image)
+                chip.chipIcon = ContextCompat.getDrawable(requireContext(), tech.image)
 
                 rootLayout.addView(chip)
                 chipIds.add(chip.id)
